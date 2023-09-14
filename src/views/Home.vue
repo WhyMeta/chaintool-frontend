@@ -5,21 +5,21 @@
 			<div class="topTips">
 				<div>
 					<div>
-						<div>Chaintool -
-							<span><a target="_blank">{{$t("home.title[0]")}}</a></span>
-							{{$t("home.title[1]")}}
+						<div>
+							<span><a target="_blank">{{ $t("home.title[1]") }} - {{ $t("home.title[2]") }}</a></span>
 						</div>
-						{{$t("home.title[2]")}}
 					</div>
 					<!-- <div class="summary"> {{$t("home.describe")}}</div> -->
-<!-- 					<button class="theFeedback">
+					<!-- 					<button class="theFeedback">
 						<a href="https://github.com/ChainToolDao/chaintool-frontend/issues" class="theFeedback" target="_blank">{{$t("home.btnFeedback")}}</a>
 					</button> -->
 				</div>
 				<img src="../assets/imgs/main.png">
 			</div>
-			<div class="title">{{$t("home.subheadingToolList")}}</div>
-			<div class="detail">{{$t("home.listDescribe")}}</div>
+			<div class="title">
+				<span><a target="_blank">{{ $t("home.subheadingToolList") }}</a></span>
+			</div>
+			<div class="detail">{{ $t("home.listDescribe") }}</div>
 			<div class="listTool">
 				<div v-for="(item, index) in toolList" :key="'toolList' + index" @click="toRouter(item.router)">
 					<img :src='item.url'>
@@ -71,12 +71,12 @@ export default {
 					router: '/faucet',
 					url: require('../assets/imgs/toolList11.png'),
 				},
-/* 				{
-					title: this.$t('home.toolList[5].title'),
-					detail: this.$t('home.toolList[5].detail'),
-					router: '/generateWallet',
-					url: require('../assets/imgs/toolList8.png'),
-				}, */
+				/* 				{
+									title: this.$t('home.toolList[5].title'),
+									detail: this.$t('home.toolList[5].detail'),
+									router: '/generateWallet',
+									url: require('../assets/imgs/toolList8.png'),
+								}, */
 				{
 					title: this.$t('home.toolList[3].title'),
 					detail: this.$t('home.toolList[3].detail'),
@@ -95,36 +95,36 @@ export default {
 					router: '/unitConvert',
 					url: require('../assets/imgs/toolList1.png'),
 				},
-/* 				{
-					title: this.$t('home.toolList[1].title'),
-					detail: this.$t('home.toolList[1].detail'),
-					router: '/bulkQuery',
-					url: require('../assets/imgs/toolList2.png'),
-				}, */
-/* 				{
-				    title: '批量转账',
-				    detail: '批量转账',
-				    router: '/bulkTransfer',
-				    url: require('../assets/imgs/toolList3.png'),
-				}, */
-/* 				{
-					title: this.$t('home.toolList[2].title'),
-					detail: this.$t('home.toolList[2].detail'),
-					router: '/traceview',
-					url: require('../assets/imgs/toolList4.png'),
-				}, */
-/* 				{
-					title: this.$t('home.toolList[4].title'),
-					detail: this.$t('home.toolList[4].detail'),
-					router: '/address',
-					url: require('../assets/imgs/toolList6.png'),
-				}, */
-/* 				{
-					title: this.$t('home.toolList[7].title'),
-					detail: this.$t('home.toolList[7].detail'),
-					router: '/topicID',
-					url: require('../assets/imgs/toolList9.png'),
-				}, */
+				/* 				{
+									title: this.$t('home.toolList[1].title'),
+									detail: this.$t('home.toolList[1].detail'),
+									router: '/bulkQuery',
+									url: require('../assets/imgs/toolList2.png'),
+								}, */
+				/* 				{
+									title: '批量转账',
+									detail: '批量转账',
+									router: '/bulkTransfer',
+									url: require('../assets/imgs/toolList3.png'),
+								}, */
+				/* 				{
+									title: this.$t('home.toolList[2].title'),
+									detail: this.$t('home.toolList[2].detail'),
+									router: '/traceview',
+									url: require('../assets/imgs/toolList4.png'),
+								}, */
+				/* 				{
+									title: this.$t('home.toolList[4].title'),
+									detail: this.$t('home.toolList[4].detail'),
+									router: '/address',
+									url: require('../assets/imgs/toolList6.png'),
+								}, */
+				/* 				{
+									title: this.$t('home.toolList[7].title'),
+									detail: this.$t('home.toolList[7].detail'),
+									router: '/topicID',
+									url: require('../assets/imgs/toolList9.png'),
+								}, */
 				{
 					title: this.$t('home.toolList[8].title'),
 					detail: this.$t('home.toolList[8].detail'),
@@ -191,7 +191,7 @@ a {
 	gap: 30px;
 }
 
-.container .topTips > div {
+.container .topTips>div {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -199,20 +199,20 @@ a {
 	max-width: 50%;
 }
 
-.container .topTips > div div:first-child {
+.container .topTips>div div:first-child {
 	color: #000;
 	font-weight: 700;
 	font-size: 2vw;
 }
 
-.container .topTips > div div:last-child {
+.container .topTips>div div:last-child {
 	font-size: 50px;
 	font-weight: bold;
 	color: #333333;
 	line-height: 75px;
 }
 
-.container .topTips > div div:last-child span {
+.container .topTips>div div:last-child span {
 	font-size: 56px;
 	font-family: SourceHanSansCN-Bold, SourceHanSansCN;
 	font-weight: bold;
@@ -223,16 +223,24 @@ a {
 	-webkit-text-fill-color: transparent;
 }
 
-.container .topTips > img {
+.container .topTips>img {
 	width: 40vw;
 	max-width: 512px;
 	object-fit: contain;
 }
 
 .container .title {
-	font-size: 30px;
-	color: #000;
-	font-weight: 700;
+	/* font-size: 30px; */
+	/* color: #000; */
+	/* font-weight: 700; */
+	font-size: 56px;
+	font-weight: bold;
+	line-height: 84px;
+	color: #2e8ff0;
+	font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+	background: linear-gradient(313deg, #5ef4cb 0%, #19aae2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
 }
 
 .container .detail {
@@ -249,7 +257,7 @@ a {
 	width: 100%;
 }
 
-.container .listTool > div {
+.container .listTool>div {
 	display: flex;
 	width: 356px;
 	height: 118px;
@@ -259,7 +267,7 @@ a {
 	cursor: pointer;
 }
 
-.container .listTool > div:hover {
+.container .listTool>div:hover {
 	background-color: #f5f5f5;
 }
 
@@ -323,7 +331,7 @@ a {
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
-	.container .topTips > div div:last-child {
+	.container .topTips>div div:last-child {
 		font-size: 4vw;
 		font-weight: bold;
 		color: #333333;
@@ -334,11 +342,11 @@ a {
 		width: 250px;
 	}
 
-	.container .topTips > div div:last-child span {
+	.container .topTips>div div:last-child span {
 		font-size: 6vw;
 	}
 
-	.container .topTips > div {
+	.container .topTips>div {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
@@ -350,17 +358,17 @@ a {
 		width: 41vw;
 	}
 
-	.container .topTips > div > div > div {
+	.container .topTips>div>div>div {
 		height: 112px;
 	}
 }
 
 @media (max-width: 768px) {
-	.container .topTips > div div:last-child span {
+	.container .topTips>div div:last-child span {
 		font-size: 40px;
 	}
 
-	.container .listTool > div {
+	.container .listTool>div {
 		height: auto;
 	}
 
@@ -368,7 +376,7 @@ a {
 		font-size: 6vw;
 	}
 
-	.container .topTips > img {
+	.container .topTips>img {
 		width: 30vw;
 		max-width: 512px;
 		object-fit: contain;
@@ -378,11 +386,11 @@ a {
 		text-align: center;
 	}
 
-	.container .topTips > div div:first-child {
+	.container .topTips>div div:first-child {
 		font-size: 5vw;
 	}
 
-	.container .topTips > div {
+	.container .topTips>div {
 		max-width: 100%;
 		margin: 0;
 	}
@@ -391,7 +399,7 @@ a {
 		margin: 0 auto;
 	}
 
-	.container .topTips > div div:last-child {
+	.container .topTips>div div:last-child {
 		font-size: 5vw;
 		text-align: center;
 	}
@@ -412,7 +420,7 @@ a {
 		display: none;
 	}
 
-	.container .listTool > div {
+	.container .listTool>div {
 		width: 80%;
 	}
 }
@@ -421,7 +429,8 @@ a {
 	.container .listTool {
 		width: 728px;
 	}
-	.listTool > div {
+
+	.listTool>div {
 		width: 25vw;
 	}
 }
@@ -431,13 +440,14 @@ a {
 		width: 100%;
 	}
 
-	.listTool > div {
+	.listTool>div {
 		margin: 0 auto;
 		width: 47vw;
 	}
 }
+
 @media (max-width: 350px) {
-	.container .topTips > div div:last-child span {
+	.container .topTips>div div:last-child span {
 		font-size: 10vw;
 	}
 }

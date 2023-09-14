@@ -38,7 +38,7 @@ export default {
         describe: "开源才值得信赖，好用才提高效率，你所需的工具尽在于此。",
         btnFeedback: "问题反馈",
         subheadingToolList: "工具列表",
-        listDescribe: "免费效率工具，快上手试试吧",
+        listDescribe: "选择下面的工具，让你的效率飞起来吧~！",
         EVMWalletGenerator: '生成 EVM 钱包',
         toolList: [
             {

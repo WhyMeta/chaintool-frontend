@@ -30,7 +30,7 @@
 			</div>
 			<div class="rightcontainer">
 				<div>
-					<!-- <a href="https://github.com/ChainToolDao" target="_blank"> <img class="github" src="../assets/imgs/github.png" alt=""></a> -->
+					<a href="https://dropu.io" target="_blank"> <img class="dropu" src="../assets/imgs/dropu.png" alt=""></a>
 					<!-- <a href="https://twitter.com/NUpchain" target="_blank"> <img class="twitter" src="../assets/imgs/twitter.png" alt=""></a> -->
 				</div>
 				<div v-if="address" class="connect connected">
@@ -89,7 +89,7 @@
 							<div @click="cutoverLang('en')">English</div>
 						</el-collapse-item>
 						<el-collapse-item :title="$t('navigation.nav.folloUs')" name="5">
-							<a href="https://github.com/ChainToolDao" target="_blank">Github</a>
+							<a href="https://dropu.io" target="_blank">DropU</a>
 							<!-- <a href="https://twitter.com/NUpchain" target="_blank">Twitter</a> -->
 						</el-collapse-item>
 					</el-collapse>
@@ -270,6 +270,13 @@ export default {
 	width: 30px;
 	height: 30px;
 	margin-right: 12px;
+	filter: invert(0%);
+}
+
+.dropu {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
 	filter: invert(0%);
 }
 
