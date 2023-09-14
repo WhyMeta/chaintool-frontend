@@ -470,10 +470,8 @@ export default {
 			!(this.$route.params.currencySymbol !== undefined &&
 			this.$route.params.address !== undefined)
 		) {
-		    // this.$route.params.currencySymbol="Sepolia"
-			// this.$route.params.address="0xB7DEb3a3000bFC3AF5D38D690c8dEb7cff716415"
 		    this.$route.params.currencySymbol="Sepolia"
-			this.$route.params.address="0x6ac634A7112A55FD46db194118b15642AB84c421"
+			this.$route.params.address="0xB7DEb3a3000bFC3AF5D38D690c8dEb7cff716415"
 		}
 	    if(this.$route.query.id  == undefined ||this.form.abi== ''){
             //获取所有信息，填充表单
