@@ -444,7 +444,7 @@ export default {
 				value: '',
 			},
 			// 单位
-			unit: 'Wei',
+			unit: 'Ether',
 			// 保存待打开页面数据
 			pageData: null,
 			//查看ABI
