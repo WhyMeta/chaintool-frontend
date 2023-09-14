@@ -1,0 +1,23 @@
+[
+  {
+    "standard": "ERC Standard",
+    "data": [
+      "ERC20",
+      "ERC721",
+      "ERC1155"
+    ]
+  },
+  {
+    "standard": "Uniswap",
+    "data": [
+      "UniswapV2Router02"
+    ]
+  },
+  {
+    "standard": "Speedboat.studio",
+    "data": [
+      "Speedboat NFT",
+      "SpeedBoat721 NFT - Legacy"
+    ]
+  }
+]
